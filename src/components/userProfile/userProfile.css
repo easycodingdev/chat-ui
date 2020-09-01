@@ -1,0 +1,92 @@
+.main__userprofile {
+  width: 20%;
+  padding: 0 20px 0 40px;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  position: relative;
+}
+.profile__card {
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: scale(0);
+  animation-name: showIn;
+  animation-duration: 0.2s; /* or: Xms */
+  animation-iteration-count: 1;
+  animation-direction: normal; /* or: normal */
+  animation-timing-function: cubic-bezier(
+    0.17,
+    0.67,
+    0.12,
+    1.53
+  ); /* or: ease, ease-in, ease-in-out, linear, cubic-bezier(x1, y1, x2, y2) */
+  animation-fill-mode: both; /* or: backwards, both, none */
+  animation-delay: 0.3s; /* or: Xms */
+  margin-bottom: 15px;
+}
+.profile__card.user__profile__image {
+  padding: 20px 20px;
+}
+.profile__card .profile__image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.profile__card .profile__image img {
+  object-fit: cover;
+  max-width: 100%;
+}
+.profile__card h4 {
+  margin-bottom: 0;
+}
+.profile__card p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #acb3b9;
+}
+.profile__card .card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+  padding: 15px 20px;
+}
+.profile__card .card__header h4 {
+  margin: 0;
+}
+.profile__card .card__header i {
+  font-size: 20px;
+}
+.card__content {
+  border-top: 1px solid #ebe7fb;
+  overflow: auto;
+  width: 100%;
+  padding: 15px 20px;
+  color: #6d6a6a;
+  font-size: 14px;
+  display: none;
+  transform-origin: top;
+  animation-name: showIn;
+  animation-duration: 0.2s; /* or: Xms */
+  animation-iteration-count: 1;
+  animation-direction: normal; /* or: normal */
+  animation-timing-function: cubic-bezier(
+    0.88,
+    0.19,
+    0.37,
+    1.11
+  ); /* or: ease, ease-in, ease-in-out, linear, cubic-bezier(x1, y1, x2, y2) */
+  animation-fill-mode: both; /* or: backwards, both, none */
+  animation-delay: 0.2s; /* or: Xms */
+}
+.profile__card.open .card__content {
+  display: block;
+}
+.profile__card.open .card__header i:before {
+  content: "\f106";
+}
