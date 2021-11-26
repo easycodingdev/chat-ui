@@ -3,6 +3,7 @@ import React, { Component, useState, createRef, useEffect } from "react";
 import "./chatContent.css";
 import Avatar from "../chatList/Avatar";
 import ChatItem from "./ChatItem";
+import sendIcon from "../../images/Icons@1X.png";
 
 export default class ChatContent extends Component {
   messagesEndRef = createRef(null);
@@ -54,7 +55,7 @@ export default class ChatContent extends Component {
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTA78Na63ws7B7EAWYgTr9BxhX_Z8oLa1nvOA&usqp=CAU",
       type: "other",
-      msg: "I'm taliking about the tutorial",
+      msg: "I'm taliking about the school",
     },
   ];
 
@@ -131,21 +132,41 @@ export default class ChatContent extends Component {
             <div ref={this.messagesEndRef} />
           </div>
         </div>
-        <div className="content__footer">
-          <div className="sendNewMessage">
-            <button className="addFiles">
+        <div className="content__footer for_outline">
+          <div className="sendNewMessage" >
+            {/* <button className="addFiles">
               <i className="fa fa-plus"></i>
-            </button>
-            <input
+            </button> */}
+
+            {/* <input
               type="text"
               placeholder="Type a message here"
               onChange={this.onStateChange}
               value={this.state.msg}
             />
+
             <button className="btnSendMsg" id="sendMsgBtn">
               <i className="fa fa-paper-plane"></i>
+            </button> */}
+
+
+      
+             <input
+              type="text"
+              placeholder="Type a message here"
+              onChange={this.onStateChange}
+              value={this.state.msg}
+            />
+
+            <button className="btnSendMsg" id="sendMsgBtn">
+                <img className="mt-3" src={sendIcon}></img>
             </button>
+
+          
+
+
           </div>
+
         </div>
       </div>
     );

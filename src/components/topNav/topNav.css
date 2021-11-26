@@ -1,0 +1,10 @@
+.for_top_nav{
+    width: 1809px;
+    border-radius: 25px;
+}
+
+.person_circle{
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+}

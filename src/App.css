@@ -13,15 +13,21 @@ body {
   height: 100%;
 }
 .__main {
-  max-width: 90%;
+  max-width: 100%;
   margin: auto;
-  background-color: #fff;
-  min-height: 80vh;
+  background-color: #E3E3E3;
+  min-height: 100vh;
   width: 100%;
   border-radius: 10px;
-  padding: 20px;
+  /* padding: 20px; */
   display: flex;
   padding-left: 0;
+
+  padding-top: 110px;
+  padding-bottom: 119px;
+  padding-left: 10px;
+  padding-right: 30px;
+ 
 }
 
 .btn {
@@ -79,3 +85,15 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #3b5bfe;
 }
+
+.first_main{
+  width: 100vw !important;
+}
+
+.for_topNav{
+  position: absolute;
+  top: 30px;
+  left: 4.2%;
+}
+
+
