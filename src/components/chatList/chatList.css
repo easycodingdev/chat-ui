@@ -1,6 +1,8 @@
 .main__chatlist {
   border-right: 1px solid #ebe7fb;
-  padding: 0 40px 0 0px;
+  /* padding: 0 40px 0 0px; */
+  width: 25%;
+  
 }
 .chatlist__heading {
   display: flex;
@@ -39,9 +41,9 @@
   font-size: 20px;
 }
 .chatlist__items {
-  margin-top: 30px;
+  margin-top: 2px;
   overflow: auto;
-  max-height: calc(100vh - calc(100vh / 2));
+  max-height: calc(100vh - calc(100vh / 7));
 }
 
 .chatlist__item {
@@ -65,6 +67,7 @@
   ); /* or: ease, ease-in, ease-in-out, linear, cubic-bezier(x1, y1, x2, y2) */
   animation-fill-mode: both; /* or: backwards, both, none */
   animation-delay: 0.1s; /* or: Xms */
+  height: 64px;
 }
 @keyframes showIn {
   0% {

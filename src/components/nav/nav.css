@@ -5,6 +5,11 @@
   flex-direction: column;
   padding: 0 25px;
   padding-top: 30px;
+
+  /* position: relative;
+    top: -97px;
+    height: 100vh;
+    background-color: rgb(0, 119, 255); */
 }
 .nav img {
   display: block;

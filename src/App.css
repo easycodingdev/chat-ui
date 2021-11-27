@@ -13,15 +13,21 @@ body {
   height: 100%;
 }
 .__main {
-  max-width: 90%;
+  max-width: 100%;
   margin: auto;
-  background-color: #fff;
-  min-height: 80vh;
+  background-color: #E3E3E3;
+  min-height: 100vh;
   width: 100%;
   border-radius: 10px;
-  padding: 20px;
+  /* padding: 20px; */
   display: flex;
   padding-left: 0;
+
+  padding-top: 98px;
+  padding-bottom: 229px;
+  padding-left: 10px;
+  padding-right: 30px;
+ 
 }
 
 .btn {
@@ -78,4 +84,41 @@ body {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #3b5bfe;
+}
+
+.first_main{
+  
+  /* width: 100vw !important; */
+
+  /* max-width: 100%; */
+  margin: auto;
+  /* min-height: 100vh; */
+  width: 100%;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.for_topNav{
+   position: absolute;
+   margin-top: 22px;
+    margin-left: 76px;
+}
+
+.write_Notes_card{
+  position: absolute;
+  top: 856px;
+   left: 72%;
+}
+
+
+.hello{
+  display: flex;
+  /* height: 100vh; */
+  width: 100%;
+  background-color: #E3E3E3;
+}
+
+._nav{
+  max-height: 100vh;
+  background: blue;
 }

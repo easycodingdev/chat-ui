@@ -1,9 +1,17 @@
 .main__userprofile {
-  width: 20%;
-  padding: 0 20px 0 40px;
+  width: 100%;
+  /* padding: 0 15px 0 15px; */
   transition: all 0.3s ease-in-out;
   overflow: hidden;
   position: relative;
+
+  /* flex-grow: 1; */
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin-left: 20px;
+
+  height: 87%;
 }
 .profile__card {
   background-color: #fff;
@@ -89,4 +97,43 @@
 }
 .profile__card.open .card__header i:before {
   content: "\f106";
+}
+
+.blank_icon {
+  padding: 20px;
+  background: whitesmoke;
+  border-radius: 10px;
+}
+
+.for_field {
+  display: block;
+  width: 100%;
+  padding: 0.475rem 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: whitesmoke;
+  border: none;
+  border-radius: 20px;
+}
+
+.for_btn {
+  border: none;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #495057;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.for_card {
+  background-color: whitesmoke;
+  /* padding: 10px 19px; */
+  padding-top: 10px;
+  padding-bottom: 0.5px;
+  padding-right: 19px;
+  padding-left: 19px;
+  border-radius: 20px;
 }

@@ -3,6 +3,7 @@ import React, { Component, useState, createRef, useEffect } from "react";
 import "./chatContent.css";
 import Avatar from "../chatList/Avatar";
 import ChatItem from "./ChatItem";
+import sendIcon from "../../images/Icons@1X.png";
 
 export default class ChatContent extends Component {
   messagesEndRef = createRef(null);
@@ -50,11 +51,25 @@ export default class ChatContent extends Component {
       msg: "what plan mate?",
     },
     {
+      key: 6,
+      image:
+        "https://pbs.twimg.com/profile_images/1116431270697766912/-NfnQHvh_400x400.jpg",
+      type: "",
+      msg: "I didn't understand",
+    },
+    {
       key: 7,
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTA78Na63ws7B7EAWYgTr9BxhX_Z8oLa1nvOA&usqp=CAU",
       type: "other",
-      msg: "I'm taliking about the tutorial",
+      msg: "I'm taliking about the school",
+    },
+    {
+      key: 2,
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTA78Na63ws7B7EAWYgTr9BxhX_Z8oLa1nvOA&usqp=CAU",
+      type: "other",
+      msg: "we will talk about it",
     },
   ];
 
@@ -98,6 +113,7 @@ export default class ChatContent extends Component {
       <div className="main__chatcontent">
         <div className="content__header">
           <div className="blocks">
+            
             <div className="current-chatting-user">
               <Avatar
                 isOnline="active"
@@ -105,15 +121,32 @@ export default class ChatContent extends Component {
               />
               <p>Tim Hover</p>
             </div>
+
           </div>
 
+     
+          <p style={{marginLeft: "90px"}}>janesmith@labiba.ai <br /> +962 6 551 5383</p>
+    
+
           <div className="blocks">
+         
+      <div className="d-flex flex-row mt-3" style={{marginLeft: "150px"}}>
+      <button className="for_btn">lorem ipsum</button>
+      <button className="for_btn mx-3">lorem ipsum</button>
+      <button className="for_btn">lorem ipsum</button>
+      </div>
+      </div>
+
+        
+
+          {/* <div className="blocks">
             <div className="settings">
               <button className="btn-nobg">
                 <i className="fa fa-cog"></i>
               </button>
             </div>
-          </div>
+          </div> */}
+
         </div>
         <div className="content__body">
           <div className="chat__items">
@@ -131,21 +164,41 @@ export default class ChatContent extends Component {
             <div ref={this.messagesEndRef} />
           </div>
         </div>
-        <div className="content__footer">
-          <div className="sendNewMessage">
-            <button className="addFiles">
+        <div className="content__footer for_outline">
+          <div className="sendNewMessage" >
+            {/* <button className="addFiles">
               <i className="fa fa-plus"></i>
-            </button>
-            <input
+            </button> */}
+
+            {/* <input
               type="text"
               placeholder="Type a message here"
               onChange={this.onStateChange}
               value={this.state.msg}
             />
+
             <button className="btnSendMsg" id="sendMsgBtn">
               <i className="fa fa-paper-plane"></i>
+            </button> */}
+
+
+      
+             <input
+              type="text"
+              placeholder="Type a message"
+              onChange={this.onStateChange}
+              value={this.state.msg}
+            />
+
+            <button className="btnSendMsg" id="sendMsgBtn">
+                <img className="mt-3" src={sendIcon}></img>
             </button>
+
+          
+
+
           </div>
+
         </div>
       </div>
     );

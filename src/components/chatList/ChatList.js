@@ -14,7 +14,7 @@ export default class ChatList extends Component {
     },
     {
       image:
-        "https://pbs.twimg.com/profile_images/1055263632861343745/vIqzOHXj.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRJo1MiPQp3IIdp54vvRDXlhbqlhXW9v1v6kw&usqp=CAU",
       id: 2,
       name: "Ayub Rossi",
       active: false,
@@ -62,7 +62,7 @@ export default class ChatList extends Component {
     },
     {
       image:
-        "https://auraqatar.com/projects/Anakalabel/media//vesbrand/designer4.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRJo1MiPQp3IIdp54vvRDXlhbqlhXW9v1v6kw&usqp=CAU",
       id: 8,
       name: "Autumn Mckee",
       active: false,
@@ -83,6 +83,16 @@ export default class ChatList extends Component {
       active: false,
       isOnline: true,
     },
+    {
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRJo1MiPQp3IIdp54vvRDXlhbqlhXW9v1v6kw&usqp=CAU",
+      id: 5,
+      name: "Elsa Black",
+      active: false,
+      isOnline: false,
+    },
+   
+
   ];
   constructor(props) {
     super(props);
@@ -93,7 +103,7 @@ export default class ChatList extends Component {
   render() {
     return (
       <div className="main__chatlist">
-        <button className="btn">
+        {/* <button className="btn">
           <i className="fa fa-plus"></i>
           <span>New conversation</span>
         </button>
@@ -102,15 +112,15 @@ export default class ChatList extends Component {
           <button className="btn-nobg">
             <i className="fa fa-ellipsis-h"></i>
           </button>
-        </div>
-        <div className="chatList__search">
+        </div> */}
+        {/* <div className="chatList__search">
           <div className="search_wrap">
             <input type="text" placeholder="Search Here" required />
             <button className="search-btn">
               <i className="fa fa-search"></i>
             </button>
           </div>
-        </div>
+        </div> */}
         <div className="chatlist__items">
           {this.state.allChats.map((item, index) => {
             return (
