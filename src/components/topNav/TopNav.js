@@ -11,7 +11,7 @@ export default class TopNav extends Component {
   render() {
     return (
      <div className="Top_Nav">
-         <nav className="navbar navbar-expand-lg navbar-light bg-light for_top_nav">
+         <nav className="navbar navbar-expand-sm navbar-light bg-light for_top_nav">
   <a className="navbar-brand" href="#" style={{color: "#3F36C4"}}>Zakat, Tax and Customs Authority</a>
 
   {/* <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

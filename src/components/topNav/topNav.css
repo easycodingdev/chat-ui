@@ -1,5 +1,5 @@
 .for_top_nav{
-    width: 1809px;
+    /* width: 1809px; */
     border-radius: 25px;
 }
 
@@ -8,3 +8,18 @@
     width: 45px;
     height: 45px;
 }
+
+@media (min-width: 1700px) { 
+    .for_top_nav{
+        width: 1809px;
+      
+    }
+ }
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1599.98px) { 
+    .for_top_nav{
+    width: 100%;
+ }
+
+ }

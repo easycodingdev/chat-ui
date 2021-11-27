@@ -83,7 +83,16 @@ export default class ChatList extends Component {
       active: false,
       isOnline: true,
     },
-  
+    {
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRJo1MiPQp3IIdp54vvRDXlhbqlhXW9v1v6kw&usqp=CAU",
+      id: 5,
+      name: "Elsa Black",
+      active: false,
+      isOnline: false,
+    },
+   
+
   ];
   constructor(props) {
     super(props);
